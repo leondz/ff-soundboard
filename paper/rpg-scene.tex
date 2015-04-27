@@ -1,0 +1,136 @@
+%
+% File ranlp2015.tex
+
+%Contact iva@lml.bas.bg
+
+%Based on style for ACL 2010 by
+% jshin@csie.ncnu.edu.tw or pkoehn@inf.ed.ac.uk
+%%
+%% Based on the style files for ACL-IJCNLP-2009, which were, in turn,
+%% based on the style files for EACL-2009 and IJCNLP-2008...
+
+%% Based on the style files for EACL 2006 by 
+%%e.agirre@ehu.es or Sergi.Balari@uab.es
+%% and that of ACL 08 by Joakim Nivre and Noah Smith
+
+\documentclass[11pt]{article}
+\usepackage{ranlp2015}
+\usepackage{times}
+\usepackage{url}
+\usepackage{latexsym}
+
+\usepackage{mdwlist}
+%\setlength\titlebox{6.5cm}    % You can expand the title box if you
+% really have to
+
+\title{Determining Environmental Context from Fictional Narratives}
+
+\iffalse
+\author{Leon\\
+  University of Sheffield\\
+  {\tt email1@domain1.com}  \And
+  Nanna\\
+  Aarhus University\\
+  {\tt  email2@domain2.com}}
+\fi
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Experiencing a narrative can be made more enjoyable and powerful by increasing the level of the immersion.
+This can be achieved through contextual cues, such as sounds and images.
+In order to provide these cues automatically, we attempt to detect parts of the environment described in a fictional narrative.
+We present three machine learning approaches to this problem, compared to a rule-engineered baseline, and evaluate them over a dataset of fictional texts.
+In addition, we analyse the performance of this system over the output of a text-to-speech system taking the same narratives as input.
+This audio dataset is made available.
+The system is able to recognise environmental context and respond appropriately.
+\end{abstract}
+
+
+\section{Introduction}
+
+adding music changes mood, useful for immersion and positive experiences.
+we will take narratives as input.
+then, we'll work out the mood and appropriate environment music from text.
+there is a diverse range of environments.
+also, sfx for surprise events, like an approach horse, horses, thunder.
+harder mode: work from text-to-speech.
+
+
+~\cite{madden2009collaborative}
+~\cite{huiberts2010captivating}
+
+topic extraction~\cite{allan2002introduction}
+
+\section{Method}
+
+\subsection{Dataset}
+For this dataset, we used paragraphs from a set of role-playing books~\cite{fangs,crypt,poe,sswamp}.
+Each paragraph is set in a distinct location, making manual environment annotation simple and distinct.
+The set of potential environmental items in this genre is:
+
+\begin{itemize*}
+\item Mountain
+\item Hill
+\item Forest
+\item Swamp
+\item Windy
+\item Blizzard
+\item Rain
+\item Lightning
+\item Stream
+\item River
+\item Campfire
+\item Night
+\item Meadow
+\item Road
+\item Town
+\item Crowd
+\item Tavern
+\item Underground
+\item Trotting horse
+\item Galloping horse
+\end{itemize*}
+
+Paragraphs were labelled with one or more of these labels by a human annotator.
+In total, X paragraphs were labelled.
+
+\subsection{Spoken dataset}
+An eventual use of this system is to provide automatic sound effects for a read story.
+As a result, it should operate well on the output of a speech recognition system.
+Paragraphs were read by an English native speaker, and recorded.
+A speech recognition system~\cite{lamere2003design} then interpreted these readings and generated a textual representation for each paragraph.
+The labels used in the text input corpus were then associated with these outputs.
+This constitutes the spoken dataset.
+
+\subsection{Baseline}
+Trigger words of the name of the environment (swamp, rain, etc)
+
+\subsection{Features and Classifier}
+method: bag of n-grams + multiple nbayes; LD feature extraction~\cite{lui2011cross} + nbayes; bag of word reprs (w2v)~\cite{mikolov2013efficient} + multi-svm
+
+\section{Results}
+
+\section{Related Work}
+KidsRoom~\cite{bobick1999kidsroom}. 
+
+ML doc classification~\cite{sebastiani2002machine}.
+
+NN good at binary doc classification~\cite{derczynski2006machine}.
+
+SVM doc classification~\cite{isa2008text}.
+
+\section{Conclusion}
+
+\iffalse
+\section*{Acknowledgments}
+This project has received funding from the European Union’s Seventh Framework Programme for research, technological development and demonstration under grant agreement No. 611233, \textsc{Pheme}.
+ah, was anything funding this? could anything be associated with this?? ahhh, erm
+\fi
+
+\bibliographystyle{acl}
+\bibliography{rpg-scene}
+
+\end{document}
