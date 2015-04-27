@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+ 
+<head>
+ 
+	<title>Fighting Fantasy Soundboard</title>
+ 
+	<!-- JavaScript -->
+	<script type="text/javascript">
+		var amb = '';
+		// Put code here or set the src attribute
+		function stopAll() {
+		    var media = document.getElementsByClassName('media'),
+		        i = media.length;
+
+		    while (i--) {
+		        media[i].pause();
+		        media[i].currentTime=0;
+		    }
+		}
+	</script>
+ 
+	<!-- CSS -->
+	<style type="text/css">
+	<!--
+ 
+		body { background-color: #ffe; margin: 0; padding: 0; font-family: sans-serif; font-size: 12px; }
+		p { margin-bottom: 10px; }
+		button {width: 150px; height: 80px; text-align: center; padding: 1px; margin: 0px; color: white; background-size: 100%}
+		.battle button {height: 50px; background-color: #600; font-weight: bold;}
+		.dead button {height: 60px; width:85px; background: #222; color: #888;}
+ 		.victory button {background: #007; color: #ee0; font-weight: bold;}
+	-->
+	</style>
+ 
+</head>
+ 
+<body>
+
+<audio loop class="media" id="campfire1" src="sounds/campfire.mp3"></audio>
+<audio loop class="media" id="crowd1" src="sounds/outdoor-crowd.mp3"></audio>
+<audio loop class="media" id="crypt1" src="sounds/arx-fatalis-ambient-crypt.mp3"></audio>
+<audio loop class="media" id="crypt2" src="sounds/hellfire-crypt.mp3"></audio>
+<audio loop class="media" id="crypt3" src="sounds/catacombs.mp3"></audio>
+<audio loop class="media" id="forest2" src="sounds/woodland.mp3"></audio>
+<audio loop class="media" id="forest3" src="sounds/forest-nature.mp3"></audio>
+<audio loop class="media" id="meadow1" src="sounds/meadow.mp3"></audio>
+<audio loop class="media" id="mountain1" src="sounds/mountain-lake-ambience.mp3"></audio>
+<audio loop class="media" id="mountain2" src="sounds/cool-summer-mountains.mp3"></audio>
+<audio loop class="media" id="ocean1" src="sounds/ocean-waves.mp3"></audio>
+<audio loop class="media" id="rain1" src="sounds/rain-and-thunder.mp3"></audio>
+<audio loop class="media" id="snowstorm1" src="sounds/snow-storm.mp3"></audio>
+<audio loop class="media" id="stream1" src="sounds/mountain-stream.mp3"></audio>
+<audio loop class="media" id="swamp1" src="sounds/swamp-ambience.mp3"></audio>
+<audio loop class="media" id="swamp2" src="sounds/swamp-fantasy.mp3"></audio>
+<audio loop class="media" id="tavern1" src="sounds/tavern.mp3"></audio>
+<audio loop class="media" id="town1" src="sounds/medieval-town.mp3"></audio>
+
+
+<audio class="media" id="victory1" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/battlevictory.mp3"></audio>
+<audio class="media" id="victory2" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/battle-victory-music.mp3"></audio>
+<audio class="media" id="victory3" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/crowning-victory.mp3"></audio>
+<audio class="media" id="victory4" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/passion-of-victory.mp3"></audio>
+<audio class="media" id="victory5" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/pokemon-victory.mp3"></audio>
+<audio class="media" id="victory6" onended="if (amb) {document.getElementById(amb).play();}" src="sounds/zelda-victory.mp3"></audio>
+
+
+<audio loop class="media" id="battle1" src="sounds/audiomachine/AM07_01_Judgment of Conviction.mp3"></audio>
+<audio loop class="media" id="battle2" src="sounds/audiomachine/AM07_02_Soeran Infertus.mp3"></audio>
+<audio loop class="media" id="battle3" src="sounds/audiomachine/AM07_03_Veni Vidi Vici.mp3"></audio>
+<audio loop class="media" id="battle4" src="sounds/audiomachine/AM07_04_Lachrimae.mp3"></audio>
+<audio loop class="media" id="battle5" src="sounds/audiomachine/AM07_05_Tomb Raider.mp3"></audio>
+<audio loop class="media" id="battle6" src="sounds/audiomachine/AM07_06_11 Days in Hell.mp3"></audio>
+<audio loop class="media" id="battle7" src="sounds/audiomachine/AM07_07_Rex Arcana.mp3"></audio>
+<audio loop class="media" id="battle8" src="sounds/audiomachine/AM07_08_Akkadian Empire.mp3"></audio>
+<audio loop class="media" id="battle9" src="sounds/audiomachine/AM07_09_Gothic Army.mp3"></audio>
+<audio loop class="media" id="battle10" src="sounds/audiomachine/AM07_10_Opus Dei.mp3"></audio>
+<audio loop class="media" id="battle11" src="sounds/audiomachine/AM07_11_Age of Rebellion.mp3"></audio>
+<audio loop class="media" id="battle12" src="sounds/audiomachine/AM07_12_Mutant Uprising.mp3"></audio>
+<audio loop class="media" id="battle13" src="sounds/audiomachine/AM07_13_Priory of Sion.mp3"></audio>
+<audio loop class="media" id="battle14" src="sounds/audiomachine/AM07_14_Cerberus.mp3"></audio>
+<audio loop class="media" id="battle15" src="sounds/audiomachine/AM07_15_Oedipus Rex.mp3"></audio>
+<audio loop class="media" id="battle16" src="sounds/audiomachine/AM07_16_Triumphator.mp3"></audio>
+<audio loop class="media" id="battle17" src="sounds/audiomachine/AM07_17_Bruticus.mp3"></audio>
+<audio loop class="media" id="battle18" src="sounds/audiomachine/AM07_18_Death Mask.mp3"></audio>
+<audio loop class="media" id="battle19" src="sounds/audiomachine/AM07_19_Command and Conquer.mp3"></audio>
+<audio loop class="media" id="battle20" src="sounds/audiomachine/AM07_20_Battle of Actium.mp3"></audio>
+
+<audio class="media" id="death1" src="sounds/sad-emotional.mp3"></audio>
+<audio class="media" id="death2" src="sounds/sad-piano-cry.mp3"></audio>
+<audio class="media" id="death4" src="sounds/sad-isolation.mp3"></audio>
+<audio class="media" id="death5" src="sounds/sad-violin-owen.mp3"></audio>
+
+<audio class="media" id="horsegallop1" src="sounds/horse-gallop.mp3"></audio>
+<audio class="media" id="horsesgallop1" src="sounds/horses-galloping.mp3"></audio>
+<audio class="media" id="horsetrot1" src="sounds/horse-trotting.mp3"></audio>
+ 
+<center>
+<p>
+ 	<button onclick="stopAll()" style="background: #050;">stahp</button>
+</p>
+
+
+<div>
+	<button style="background-image: url(img/mountain.jpg)" onclick="stopAll(); document.getElementById('mountain1').play(); amb='mountain1'">North Mountain</button>
+	<button style="background-image: url(img/mountain.jpg)" onclick="stopAll(); document.getElementById('mountain2').play(); amb='mountain2'">South Mountain</button>
+	<button style="background-image: url(img/forest.jpg)" onclick="stopAll(); document.getElementById('forest1').play(); amb='forest1'">Windy Forest</button>
+	<button style="background-image: url(img/forest.jpg)" onclick="stopAll(); document.getElementById('forest2').play(); amb='forest2'">Woody Forest</button>
+	<button style="background-image: url(img/forest.jpg)" onclick="stopAll(); document.getElementById('forest3').play(); amb='forest3'">Nature Forest</button>
+	<button style="background-image: url(img/swamp.jpg)" onclick="stopAll(); document.getElementById('swamp1').play(); amb='swamp1'">Hot Swamp</button>
+	<button style="background-image: url(img/swamp.jpg)" onclick="stopAll(); document.getElementById('swamp2').play(); amb='swamp2'">Spooky Swamp</button>
+	<button style="background-image: url(img/ocean.jpg)" onclick="stopAll(); document.getElementById('ocean1').play(); amb='ocean1'">Ocean</button>
+	<button style="background-image: url(img/rain.jpg)" onclick="stopAll(); document.getElementById('rain1').play(); amb='rain1'">Rain</button>
+	<button style="background-image: url(img/snowstorm.jpg)" onclick="stopAll(); document.getElementById('snowstorm1').play(); amb='snowstorm1'">Snowstorm</button>
+	<button style="background-image: url(img/stream.jpg)" onclick="stopAll(); document.getElementById('stream1').play(); amb='stream1'">Stream</button>
+	<button style="background-image: url(img/campfire.jpg)" onclick="stopAll(); document.getElementById('campfire1').play(); amb='campfire1'">Camp fire</button>
+	<button style="background-image: url(img/meadow.png)" onclick="stopAll(); document.getElementById('meadow1').play(); amb='meadow1'">Meadow</button>
+	<button style="background-image: url(img/town.jpg)" onclick="stopAll(); document.getElementById('town1').play(); amb='town1'">Town</button>
+	<button style="background-image: url(img/crowd.png)" onclick="stopAll(); document.getElementById('crowd1').play(); amb='crowd1'">Crowd, bustle bustle!</button>
+	<button style="background-image: url(img/tavern.jpg)" onclick="stopAll(); document.getElementById('tavern1').play(); amb='tavern1'">Tavern BEER</button>
+	<button style="background-image: url(img/crypt.jpg)" onclick="stopAll(); document.getElementById('crypt1').play(); amb='crypt1'">Ambient Crypt</button>
+	<button style="background-image: url(img/crypt.jpg)" onclick="stopAll(); document.getElementById('crypt2').play(); amb='crypt2'">Less.. ambient.. crypt?? (Ikea "Krypt&auml;n")</button>
+	<button style="background-image: url(img/crypt.jpg)" onclick="stopAll(); document.getElementById('crypt3').play(); amb='crypt3'">Serious Crypt</button>
+</div>
+
+<div class="battle">
+<h4>Battle!</h4>
+	<button onclick="stopAll(); document.getElementById('battle1').play()">Judgment of Conviction</button>
+	<button onclick="stopAll(); document.getElementById('battle2').play()">Soeran Infertus</button>
+	<button onclick="stopAll(); document.getElementById('battle3').play()">Veni Vidi Vici</button>
+	<button onclick="stopAll(); document.getElementById('battle4').play()">Lachrimae</button>
+	<button onclick="stopAll(); document.getElementById('battle5').play()">Tomb Raider</button>
+	<button onclick="stopAll(); document.getElementById('battle6').play()">11 Days in Hell</button>
+	<button onclick="stopAll(); document.getElementById('battle7').play()">Rex Arcana</button>
+	<button onclick="stopAll(); document.getElementById('battle8').play()">Akkadian Empire</button>
+	<button onclick="stopAll(); document.getElementById('battle9').play()">Gothic Army</button>
+	<button onclick="stopAll(); document.getElementById('battle10').play()">Opus Dei</button>
+	<button onclick="stopAll(); document.getElementById('battle11').play()">Age of Rebellion</button>
+	<button onclick="stopAll(); document.getElementById('battle12').play()">Mutant Uprising</button>
+	<button onclick="stopAll(); document.getElementById('battle13').play()">Priory of Sion</button>
+	<button onclick="stopAll(); document.getElementById('battle14').play()">Cerberus</button>
+	<button onclick="stopAll(); document.getElementById('battle15').play()">Oedipus Rex</button>
+	<button onclick="stopAll(); document.getElementById('battle16').play()">Triumphator</button>
+	<button onclick="stopAll(); document.getElementById('battle17').play()">Bruticus</button>
+	<button onclick="stopAll(); document.getElementById('battle18').play()">Death Mask</button>
+	<button onclick="stopAll(); document.getElementById('battle19').play()">Command and Conquer</button>
+	<button onclick="stopAll(); document.getElementById('battle20').play()">Battle of Actium</button>
+</div>
+
+<div class="victory">
+	<button onclick="stopAll(); document.getElementById('victory2').play()">BATTLE VICTORY!</button>
+	<button onclick="stopAll(); document.getElementById('victory3').play()">CROWNING VICTORY!</button>
+	<button onclick="stopAll(); document.getElementById('victory4').play()">VICTORY OF PASSION!</button>
+	<button onclick="stopAll(); document.getElementById('victory5').play()">VICTORY YAY!</button>
+	<button onclick="stopAll(); document.getElementById('victory6').play()">VICTORY! FANFARES!</button>
+
+	&nbsp;	&nbsp; &nbsp;	&nbsp;
+	<button onclick="stopAll(); document.getElementById('victory1').play()">FINAL SUPER VICTORY (it's serious)</button>
+</div>
+
+<div>
+	<button style="background-image: url(img/horse-trot.jpg)" onclick="document.getElementById('horsetrot1').play()">I'm on a horse</button>
+	<button style="background-image: url(img/horse.jpg)" onclick="document.getElementById('horsegallop1').play()">Someone else is on a Horse!</button>
+	<button style="background-image: url(img/horses-galloping.png)" onclick="document.getElementById('horsesgallop1').play()">OMG HORSES EVRYWHURR</button>
+</div>	
+
+<div class="dead" style="padding-top: 100px">
+	<button onclick="stopAll(); document.getElementById('death2').play()">Dead</button>
+	<button onclick="stopAll(); document.getElementById('death3').play()">Dead</button>
+	<button onclick="stopAll(); document.getElementById('death4').play()">Dead</button>
+	<button onclick="stopAll(); document.getElementById('death1').play()">Dead</button>
+</div>
+
+</center>
+</body>
+ 
+</html>
