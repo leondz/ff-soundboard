@@ -52,14 +52,15 @@ The system is able to recognise environmental context and respond appropriately.
 \section{Introduction}
 
 Non-verbal cues are important to improving the experience of a narrative. 
-For example, adding sound changes mood, and is useful for immersion and positive narrative experiences~\cite{ermi2005fundamental,madden2009collaborative,huiberts2010captivating}.
+For example, adding sound qualitatively impacts the recipient's mood, and is useful for increasing immersion and positive narrative experiences~\cite{ermi2005fundamental,madden2009collaborative,huiberts2010captivating}.
 An immersive environment is most engaging when participants believe their actions affect the environment; reliable and responsive cues such as sounds are important for this~\cite{bobick1999kidsroom}.
-However, providing such cues can be an expensive manual process, and many narratives do not have accompanying contextual media such as background sounds or images.
+However, providing such cues can be an expensive manual process, and many textual narratives do not have accompanying contextual media such as background sounds or images.
 An automatic approach could be taken to building such context.
-Taking narratives as input, we attempt to determine what the appropriate environmental component of the context is, which can then be used to provide cues (such as ambient sounds).
+The research question we address is: how can we automatically identify in narratives environments and events that can be associated with external cues?
 
+Taking narratives as input, we attempt to determine what the appropriate environmental component of the context is, which can then be used to provide cues (such as ambient sounds).
 There is a diverse range of potential environments from which cues can be generated, even in a constrained corpus of narratives.
-In addition, effects (e.g. sound or audio cues) are required for surprise events described in a story, like an approaching horse or a thunderstorm.
+In addition, effects (e.g. video or audio cues) are required for surprise events described in a story, like an approaching horse or a thunderstorm.
 This is similar to streamed topic extraction~\cite{allan2002introduction,preotiuc2012trendminer}.
 We determine a corpus, frame the task by giving a specific set of environments for which cues are available, and then evaluate system performance over this dataset.
 Finally, we create a new language resource of audio recordings and automatic transcriptions, used to evaluate the system on input closer to that it might receive when operating in real-time.
@@ -69,8 +70,11 @@ Finally, we create a new language resource of audio recordings and automatic tra
 \section{Method}
 
 \subsection{Dataset}
-For this dataset, we used paragraphs from a set of fantasy role-playing books~\cite{fangs,crypt,poe,sswamp}.
-Each paragraph is set in a distinct location, making manual environment annotation simple and distinct.
+Our ideal requirements are that a dataset be structures as instances, each being a focused passage of text, with most containing descriptions of environments or events.
+For this dataset, we used paragraphs from a set of fantasy role-playing books.%~\cite{fangs,crypt,poe,sswamp}.
+%HIDDEN FOR REVIEW
+Each paragraph is set in a distinct location, each possibly combined with the description of an event, making manual environment annotation simple and distinct.
+In comparison, the bounds of passages of text relevant to a particular cue are harder to detemine in running narrative text from e.g. a fictional novel .
 The set of potential environmental items in this genre is:
 
 %\begin{itemize*}
@@ -97,31 +101,54 @@ The set of potential environmental items in this genre is:
 %\end{itemize*}
 
 \begin{quote}
-Mountain; Hill; Forest; Swamp; Windy; Blizzard; Rain; Lightning; Stream; River; Campfire; Night; Meadow; Road; Town; Crowd; Tavern; Underground; Trotting horse; Galloping horse
+{\bf Environments:} Mountain; Hill; Forest; Swamp; Meadow; Road; Town; Crowd; Tavern; Underground.
+
+{\bf Ambience:} Windy; Blizzard; Rain; Lightning; Stream; River; Campfire; Night.
+
+{\bf Events:} Trotting horse; Galloping horse; Thunder
 \end{quote}
 
 Paragraphs were labelled with one or more of these labels by a human annotator.
-In total, X paragraphs were labelled.
+In total, 203 paragraphs were labelled, with 13884 words.
 
 \subsection{Spoken dataset}
 An eventual use of this system is to provide automatic sound effects in real-time for a story that is read out loud by a human narrator.
 As a result, it should operate well on the output of a speech recognition system.
 Paragraphs were read by an English native speaker, and recorded.
-A speech recognition system~\cite{lamere2003design} then interpreted these readings and generated a textual representation for each paragraph.
+A speech recognition system~\cite{lamere2003design} then interpreted these readings and generated a textual version of each paragraph.
 The labels used in the text input corpus were then associated with these outputs.
-This constitutes the spoken dataset.
+This constitutes the transcribed dataset.
 
 \subsection{Baseline}
-Trigger words of the name of the environment (swamp, rain, etc)
+As a baseline, we use a gazetteer trigger words that match the name of the cue.
+If a word occurs in a candidate passage, then that cue is triggered.
+For example, if there is a cue named ``swamp", the passage ``He marches through the swamp, sweating from his brow" will trigger that cue using the baseline system.
 
-\subsection{Features and Classifier}
-method: bag of n-grams + multiple nbayes.
+\subsection{Features and Classification}
+
+We take a variety of approaches.
+Firstly, we try a bag-of-words representation using a multinomial Bayes classifier.
+In addition, we represent paragraphs as average vectors in n-dimensional space by taking the cosine product of embeddings of words in the paragraph, and then learn a binary SVM for each cue based on these representations.
+We used Collobert and Weston[] embeddings.
+
+The genre used to generate these had a significant effect on result quality.
+For example, using embeddings generated from two billion Google News articles, the top-ranking non-punctuation match for the sentence \emph{``The going underfoot becomes muddier, until eventually you reach an area where bulrushes tower over your head."} was the phrase {\em Maria\_Sharapova} -- not an intuitively relevant result.
+News is intrinsically constrained in topic and style, and out-of-domain for fictional narratives.
+Therefore, we used embeddings learned from the multi-topic Brown corpus, which includes large amounts of narrative and fictional text.
+
 
 LD feature extraction~\cite{lui2011cross} + nbayes; LD motivated by diversity in subsets of environments encountered per story (e.g. some stories set mostly in woodland, others in a town)
 
-bag of word reprs (w2v)~\cite{mikolov2013efficient} + multi-svm.
+We note that false positives have a higher penalty than false negatives.
+It is disruptive to receive the wrong cue.
+For example, hearing battle noises when one should hear a babbling brook (false positive) is detrimental, and worse than hearing nothing (false negative).
+In order to bias classifications in this direction, we experiment with the SVM Cost parameter~\cite{vapnik?joachims?} and also evaluate with both F1 and F2.
+
 
 \section{Results}
+
+Our evaluation is using precision and recall.
+This is not a plain multi-way classification task; spurious cues and missed cues are both possible, as are multiple cues per text passage.
 
 \section{Related Work}
 
