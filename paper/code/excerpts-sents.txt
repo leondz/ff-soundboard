@@ -442,8 +442,11 @@ If you wish to rest for the night, pay the 3 Gold Pieces.
 The bed you are given is not particularly clean, but is comfortable and you may add 5 stamina points for a good night's rest.
 The path winds alongside a bubbling stream and you follow it onwards along the west bank.
 The valley you are in becomes narrower, but you soon come across a flat, grassy bank where you may stop and eat Provisions
-You may try to kill all the snakes in the pit with your weapon.
-forest
+You turn to your pack and pick it up.
+But you drop it again in fear as it moves in your hands!
+Something is inside it!
+Cautiously, you open the top and, as you do so, a green squirrel-like creature with a huge belly leaps out and into the woods.
+You curse and examine the contents, but it is too late: the little creature has eaten all your Provisions, You are angry at your own carelessness and set off briskly along the trail again.
 Your relief is somewhat premature, however, as you discover when you take your next step forward.
 Your foot triggers a release mechanism and three saplings snap up in front of you.
 Each is fitted with sharpened stakes which whip towards you at heart level.
