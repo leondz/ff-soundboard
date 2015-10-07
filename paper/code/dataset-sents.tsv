@@ -1,216 +1,214 @@
 tavern	But when, sitting in the local tavern, you announce your plan to explore the swamp, the listeners are dumbfounded.
-tavern	They cluster around you, pushing back the battered benches to make room.
-tavern	The swamp, they tell you, holds the bones of many such as you!
-tavern	Not only is it trackless and infested with vermin, monsters and starving bandits, but a group of wizards calling themselves the Masters have recently claimed Scorpion Swamp for their own.
+	They cluster around you, pushing back the battered benches to make room.
+	The swamp, they tell you, holds the bones of many such as you!
+	Not only is it trackless and infested with vermin, monsters and starving bandits, but a group of wizards calling themselves the Masters have recently claimed Scorpion Swamp for their own.
 tavern	One of them - a big, burly man escorted by two great grey wolves - visited this very tavern last week.
-tavern	He didn't say much, they tell you, but he didn't seem the sort to welcome trespassers on his property!
+	He didn't say much, they tell you, but he didn't seem the sort to welcome trespassers on his property!
 town	When you enter the little town of Fenmarge, no one finds you remarkable.
-town	Many travellers pass through here.
-town	Your sturdy helmet and sharp sword indicate you are a fighter not to be trifled with, but this is not uncommon.
+	Many travellers pass through here.
+	Your sturdy helmet and sharp sword indicate you are a fighter not to be trifled with, but this is not uncommon.
 campfire	You return to Selator's hut.
 campfire	A merry fire is crackling in the kitchen, and something is cooking that smells delicious.
-campfire	He greets you warmly and asks, 'Have you got the berry?'
-campfire	If you have got the purple berry of the Antherica plant, turn to 175.
-campfire	If not, turn to 52.
+	He greets you warmly and asks, 'Have you got the berry?'
+	If you have got the purple berry of the Antherica plant, turn to 175.
+	If not, turn to 52.
 swamp	As you walk west, the swamp becomes even grimmer.
 swamp	Just as you think that you can stand it no longer, the path begins to widen, and you find yourself in a long, narrow opening.
-swamp	This is Clearing 6.
-swamp	If you have been here before, turn to 210.
-swamp	If you have not been here before, keep reading.
-swamp	You look around and see no other paths; you appear to have come to a dead end.
-swamp	You walk towards a large grey boulder, hoping to rest on it for a minute.
-swamp	Suddenly, the boulder moves!
-swamp	You are not looking at grey stone at all, but coarse grey hair.
-swamp	Red eyes glare at you, and a DIRE BEAST with six clawed legs moves towards you.
+	This is Clearing 6.
+	If you have been here before, turn to 210.
+	If you have not been here before, keep reading.
+	You look around and see no other paths; you appear to have come to a dead end.
+	You walk towards a large grey boulder, hoping to rest on it for a minute.
+	Suddenly, the boulder moves!
+	You are not looking at grey stone at all, but coarse grey hair.
+	Red eyes glare at you, and a DIRE BEAST with six clawed legs moves towards you.
 town	Gronar tells you to seek out Poomchukker in the village market.
 town	As soon as you enter the tangle of streets and shops, you are lost.
 town	You ask for directions several times, and eventually a group of laughing young boys escorts you to a large house on the edge of the market.
-meadow	As you walk along, you sense that you are far to the east of the point where you entered the swamp.
-meadow	You wonder if you have taken the right paths.
+	As you walk along, you sense that you are far to the east of the point where you entered the swamp.
+	You wonder if you have taken the right paths.
 meadow	Suddenly, you step into a grassy glade.
-meadow	This is Clearing 21.
-meadow	If you have been here before, turn to 364.
-meadow	If not, keep reading.
-meadow	There is a crystalline pool in the middle of the clearing, with an inviting sandy beach to one side.
-meadow	There are no other paths leading out.
+	This is Clearing 21.
+	If you have been here before, turn to 364.
+	If not, keep reading.
+	There is a crystalline pool in the middle of the clearing, with an inviting sandy beach to one side.
+	There are no other paths leading out.
 crypt	You control your fear and approach the gloomy tower.
 crypt	Bats circle around the upper storey.
 crypt	As you step towards the great iron door, you see a hideous face sculpted on it.
-crypt	Then the door swings open before you!
-crypt	Grimslade stands waiting.
-crypt	He is tall and skeletally thin.
-crypt	The crimson designs on his black robe seem to glow.
-crypt	He greets you pleasantly, but your ring, hot on your finger, continues to warn you that you are in the presence of evil.
-crypt	'I know all about you,' he says.
-crypt	'You want to explore the swamp.
-crypt	That meddling fool Gronar sent you here.
-crypt	But what makes you think you are worthy of my time?
-crypt	I need a hero who is afraid of nothing.'
+	Then the door swings open before you!
+	Grimslade stands waiting.
+	He is tall and skeletally thin.
+	The crimson designs on his black robe seem to glow.
+	He greets you pleasantly, but your ring, hot on your finger, continues to warn you that you are in the presence of evil.
+	'I know all about you,' he says.
+	'You want to explore the swamp.
+	That meddling fool Gronar sent you here.
+	But what makes you think you are worthy of my time?
+	I need a hero who is afraid of nothing.'
 town	You make your way across the fields and along the winding roads, towards the village market-place.
-town	There stands the house of Poomchukker, just as you left it.
-town	You knock on the door, and the Goblin girl admits you.
-town	She takes you to Poomchukker's library.
-town	There he sits, swathed in a silken robe.
+	There stands the house of Poomchukker, just as you left it.
+	You knock on the door, and the Goblin girl admits you.
+	She takes you to Poomchukker's library.
+	There he sits, swathed in a silken robe.
 forest	You enter a rather pleasant glade surrounded by gnarled oaks.
-forest	You are in Clearing 9.
-forest	If you have been here before, turn to 192.
-forest	If you have not been here before, keep on reading.
+	You are in Clearing 9.
+	If you have been here before, turn to 192.
+	If you have not been here before, keep on reading.
 forest	Leaning against a tree, eating lunch, is a small, cheerful man in dark clothes.
-forest	His food is in a picnic basket.
-forest	He has no visible weapons, except for the knife with which he is cutting his cheese.
-forest	He notices you standing there and hails you.
-tavern,night	The Bent Spear is a pleasant, roomy inn.
-tavern,night	You pay the innkeeper a Gold Piece and go to your room.
-tavern,night	As soon as your head hits the pillow, you fall asleep.
+	His food is in a picnic basket.
+	He has no visible weapons, except for the knife with which he is cutting his cheese.
+	He notices you standing there and hails you.
+tavern	The Bent Spear is a pleasant, roomy inn.
+tavern	You pay the innkeeper a Gold Piece and go to your room.
+night	As soon as your head hits the pillow, you fall asleep.
 stream	You use your Ice spell to form a bridge across the river.
 stream	But the river is very wide and warm, so the bridge is very slender!
 stream	You have crossed several shallow streams, but now you are faced with a deeper one.
-stream	This is Clearing 34.
+	This is Clearing 34.
 stream	You see movement in the water below, and you are not sure that you care to wade across.
-forest	The path leads you northward, and gradually upward.
+	The path leads you northward, and gradually upward.
 forest	The ground around you is somewhat drier now, and the swamp trees have been replaced by deep forest.
 forest	The trees thin out ahead of you, and you see a large clearing dotted with low bushes.
-forest	This is Clearing 11.
-forest	If you have been here before, turn to 108.
-forest	If you have not been here before, keep on reading.
-forest	You stop and listen, but hear nothing.
-forest	You step out into the clearing to search for more paths, suddenly you realize that you are being watched by two huge WOLVES.
+	This is Clearing 11.
+	If you have been here before, turn to 108.
+	If you have not been here before, keep on reading.
+	You stop and listen, but hear nothing.
+	You step out into the clearing to search for more paths, suddenly you realize that you are being watched by two huge WOLVES.
 tavern	The villagers shake their heads as you turn towards the door, but make no further attempts to dissuade you.
-tavern	But, before you reach the door, a villager blocks your path.
-tavern	He is a short, middle-aged fellow with a black beard cut square across the bottom.
-tavern	At first you take him for a farmer, but he seems more interested in you than any farmer should be!
-tavern	He takes your arm and leads you to a table in the corner of the tavern.
+	But, before you reach the door, a villager blocks your path.
+	He is a short, middle-aged fellow with a black beard cut square across the bottom.
+	At first you take him for a farmer, but he seems more interested in you than any farmer should be!
+	He takes your arm and leads you to a table in the corner of the tavern.
 tavern	The others have gone back to their chatting, and you find yourself willing to hear what this quiet man will say to you.
-tavern	He introduces himself as Gronar.
+	He introduces himself as Gronar.
 tavern	You do your best to ignore the noise of the roisterers carousing below, but it gets worse.
-tavern	Long after midnight, you fall into a fitful sleep, but you are awakened early the next morning by the sounds of a market-place outside your window.
-tavern	Angrily, you collect your belongings and stalk southward out of town, towards the swamp.
-stream	Ahead of you there is an opening in the trees.
-stream	You investigate.
-stream	You are in Clearing 35.
+town	Long after midnight, you fall into a fitful sleep, but you are awakened early the next morning by the sounds of a market-place outside your window.
+town	Angrily, you collect your belongings and stalk southward out of town, towards the swamp.
+forest	Ahead of you there is an opening in the trees.
+	You investigate.
+	You are in Clearing 35.
 stream	You can see the wide Foulbrood River, running east and west.
 stream	A great stone bridge crosses the river.
-stream	It looks totally Deserted.
-swamp	You notice that your path is criss-crossed by spiderwebs.
-swamp	There is a clearing ahead.
-swamp	Even before you enter it, you can see that the surrounding trees are thickly festooned with webs, and that there are many spiders there.
-swamp	You are in Clearing 17.
-swamp	If you have been here before, turn to 345.
-swamp	If you have not been here before, keep reading.
-swamp	In the centre of the clearing there is a sumptuous pavilion, which seems to float above the marshy ground.
-swamp	It is silver-grey and it shimmers like woven spider-silk.
-swamp	Seated in the pavilion is a tall man.
-swamp	His thick beard and eyebrows are white, and his robe is as silver-grey as his tent.
-swamp	Around his neck hangs a gleaming silver Spider Amulet
-stream	As you walk along, the ground becomes rocky and the path slopes upwards.
-stream	Instead of dismal trees, you see the sky ahead of you!
+	It looks totally Deserted.
+	You notice that your path is criss-crossed by spiderwebs.
+	There is a clearing ahead.
+forest	Even before you enter it, you can see that the surrounding trees are thickly festooned with webs, and that there are many spiders there.
+	You are in Clearing 17.
+	If you have been here before, turn to 345.
+	If you have not been here before, keep reading.
+	In the centre of the clearing there is a sumptuous pavilion, which seems to float above the marshy ground.
+	It is silver-grey and it shimmers like woven spider-silk.
+	Seated in the pavilion is a tall man.
+	His thick beard and eyebrows are white, and his robe is as silver-grey as his tent.
+	Around his neck hangs a gleaming silver Spider Amulet
+	As you walk along, the ground becomes rocky and the path slopes upwards.
+	Instead of dismal trees, you see the sky ahead of you!
 stream	You emerge on top of a high cliff overlooking the murky Foulbrood River.
-stream	You are in Clearing 20.
+	You are in Clearing 20.
 stream	It is at least twenty metres down to the river, and the cliff is too steep for you to climb down.
 stream	Below, you can see huge crocodiles sunning themselves in the water.
 stream	Far to the east you can see a bridge which appears to cross the river, but no trail leads along the riverbank in that direction.
-stream	Two trails leave the clearing.
+	Two trails leave the clearing.
 meadow	The eastward path is well tended; the trees and bushes do not grow across the trail, but are trimmed back.
 meadow	Before long you reach a pleasant clearing.
-meadow	You are in Clearing 27.
-meadow	If you have been here before, turn to 238.
-meadow	If you have not been here before, keep reading.
-meadow	Everywhere different sorts of plants are growing .
-meadow	.
-meadow	.
+	You are in Clearing 27.
+	If you have been here before, turn to 238.
+	If you have not been here before, keep reading.
+	Everywhere different sorts of plants are growing .
 meadow	some are flowering, and they all look healthy and attractive.
 meadow	The entire glade looks too beautiful to be natural, and too natural to be a garden.
-meadow	As you look around, a middle-aged man approaches you.
-meadow	He is tall and broad-shouldered, and he wears work-stained clothes.
+	As you look around, a middle-aged man approaches you.
+	He is tall and broad-shouldered, and he wears work-stained clothes.
 stream	The river is warm, and you see your chunk of ice melting away beneath you.
-stream	All too soon it falls apart.
+	All too soon it falls apart.
 stream	You grab your sword and swim desperately for the river-bank, but your gear is too heavy.
 stream	You sink to the bottom, choking on the river slime.
-stream	Your adventure is over.
+	Your adventure is over.
 swamp	You are in a particularly marshy area.
 swamp	The ground squishes under your feet.
-swamp	The path bends slightly and runs alongside a large pool.
-swamp	You can see that there is one other exit from this clearing.
-swamp	You are in Clearing 28.
-swamp	If you have been here before, turn to 137.
-swamp	If you have not been here before, keep reading.
+	The path bends slightly and runs alongside a large pool.
+	You can see that there is one other exit from this clearing.
+	You are in Clearing 28.
+	If you have been here before, turn to 137.
+	If you have not been here before, keep reading.
 swamp	The surface of the pool ripples nastily, and green slime coats the water.
-swamp	You would never drink out of this pool, you are sure!
-swamp	Suddenly the scum on top of the pool seems to pull together.
-swamp	To your amazement, it heaves itself out of the water and on to the path, blocking your way.
-stream	As the bridge breaks up, you climb on to the largest piece you can find.
+	You would never drink out of this pool, you are sure!
+	Suddenly the scum on top of the pool seems to pull together.
+	To your amazement, it heaves itself out of the water and on to the path, blocking your way.
+	As the bridge breaks up, you climb on to the largest piece you can find.
 stream	It forms a sort of boat on which you float eastward down the river.
-stream	Both banks are covered by thick jungle.
-stream	Then, ahead of you, you see a huge, old bridge made of stone!
+stream,jungle	Both banks are covered by thick jungle.
+	Then, ahead of you, you see a huge, old bridge made of stone!
 tavern	You decide to go to the closest - the Black Bear.
 tavern	There are many convivial folk in the tavern downstairs, but you pay the innkeeper a gold piece and go straight up to your room.
 tavern	But you cannot sleep because of the noise from the merry-makers below.
-tavern	Lose 1 stamina point.
+	Lose 1 stamina point.
 town	You walk into a village and notice a lot of activity.
 town	The villagers are bringing in their sacks of grain and rice and stacking them in a central store.
-town	They eye you with suspicion but let you pass.
+	They eye you with suspicion but let you pass.
 town	You head for an inn and sit down on a bench outside the building and rest (add 4 points to your stamina).
-town	A little girl skips past you with a bag of rice.
-town	Suddenly, the bag breaks and all the rice spills on to the ground.
-town	She begins to cry that she's already late for school and gets down on her knees to pick up the grains.
-crowd	The Elves congregate in a huge stone stadium encircling a smooth green field.
-crowd	Cloris the Elf-maiden explains the rules.
-crowd	'The team is made up of five men and women.
-crowd	Two teams compete to carry a circular rock across the opposing team's territory.
-crowd	Each player plays individually against his or her opponent.
-crowd	The player must move twelve paces four times (forty-eight paces) while the opponent tries to stop him or her with body blows.'
-stream,campfire	You poke your sword into the stream and find a very good ford; it's quite shallow and easy to cross without getting too wet.
-stream,campfire	You cross the stream.
-stream,campfire	The camp-fire is very close to the edge of the forest.
-stream,campfire	You hear a distant noise to the left and see a flame rising into the sky.
-stream,campfire	It has the distinct shape of a fist.
+	A little girl skips past you with a bag of rice.
+	Suddenly, the bag breaks and all the rice spills on to the ground.
+	She begins to cry that she's already late for school and gets down on her knees to pick up the grains.
+meadow	The Elves congregate in a huge stone stadium encircling a smooth green field.
+	Cloris the Elf-maiden explains the rules.
+	'The team is made up of five men and women.
+	Two teams compete to carry a circular rock across the opposing team's territory.
+	Each player plays individually against his or her opponent.
+	The player must move twelve paces four times (forty-eight paces) while the opponent tries to stop him or her with body blows.'
+stream	You poke your sword into the stream and find a very good ford; it's quite shallow and easy to cross without getting too wet.
+stream	You cross the stream.
+campfire,forest	The camp-fire is very close to the edge of the forest.
+	You hear a distant noise to the left and see a flame rising into the sky.
+	It has the distinct shape of a fist.
 crypt	The clamour of the excited spectators gradually fades behind you as you venture deep into the gloom of the cavern tunnel.
-arctic	Winters in northern Allansia are always cruel and bitter.
+	Winters in northern Allansia are always cruel and bitter.
 arctic	The snow falls thick and the icy wind blows hard, chilling everybody to the bone.
 arctic	For the past few weeks you have been hired by a merchant called Big Jim Sun to protect his trading caravans as they roll their way slowly north to the frozen outposts.
-arctic	The horse-drawn carts are laden with cloth, utensils, weapons, salted meats, spices and tea, which are traded for furs and ivory carvings made from mammoths' tusks.
-arctic	Big Jim is not usually worried about travelling north, as bandits only attack his caravans on the return journey - he is not alone in recognizing the value of the northern goods.
-mountains	You set off straight away towards the outpost at the base of Icefinger Mountains.
-mountains	You arrive two hours later at a scene of ugly carnage.
-mountains	The snow is red with blood and all the wooden hutsare smashed and torn down.
-mountains	Six men lie dead, their bodies slashed, their axes at their sides in the snow.
-mountains	Judging by the size of the footprints, the creature that attacked the outpost must have been enormous.
-mountains	There is nothing you can do for the unfortunate Northmen, so you head back towards Big Jim's caravan to report the news.
-campfire	You reach them in an hour, just as the daylight is fading, and relate the terrible events that have befallen the outpost.
+horses	The horse-drawn carts are laden with cloth, utensils, weapons, salted meats, spices and tea, which are traded for furs and ivory carvings made from mammoths' tusks.
+	Big Jim is not usually worried about travelling north, as bandits only attack his caravans on the return journey - he is not alone in recognizing the value of the northern goods.
+mountain	You set off straight away towards the outpost at the base of Icefinger Mountains.
+	You arrive two hours later at a scene of ugly carnage.
+arctic	The snow is red with blood and all the wooden hutsare smashed and torn down.
+arctic	Six men lie dead, their bodies slashed, their axes at their sides in the snow.
+	Judging by the size of the footprints, the creature that attacked the outpost must have been enormous.
+	There is nothing you can do for the unfortunate Northmen, so you head back towards Big Jim's caravan to report the news.
+night	You reach them in an hour, just as the daylight is fading, and relate the terrible events that have befallen the outpost.
 campfire	Big Jim orders the carts to be drawn into a circle to protect his men during the night.
 campfire	A large fire is built into the centre of the circle and you sit down beside it to talk to Big Jim.
-campfire	Everybody is nervous and a guard is posted to watch for signs of movement outside.
-hills	By mid-morning Stubb has become quite excited, knowing that he will soon be home.
-hills	Seconds later, the thought of his dead friend Morri depresses him and he shakes his fist at the unseen Hill Trolls.
+	Everybody is nervous and a guard is posted to watch for signs of movement outside.
+	By mid-morning Stubb has become quite excited, knowing that he will soon be home.
+	Seconds later, the thought of his dead friend Morri depresses him and he shakes his fist at the unseen Hill Trolls.
 hills	An hour later you see distant wisps of smoke rising into the sky.
-hills	'Stonebridge!'
-hills	yells Stubb.
+	'Stonebridge!'
+	yells Stubb.
 stream	You climb into the boat and push off from the bank.
 stream	You are about half-way across the river when you hear someone shouting angrily behind you.
 hills	After burying your elfin friend in a leafy glade, you set off as quickly as you can towards the Moonstone Hills.
-hills	But you are weak and cannot walk very fast.
+	But you are weak and cannot walk very fast.
 mountain	It takes half an hour of hard walking to reach the end of the crevasse.
 mountain	You are now able to climb further up the mountain.
-mountain	The steep climb and the swirling snow combine to make the going slow.
+arctic	The steep climb and the swirling snow combine to make the going slow.
 campfire	As you approach the fire, you smell the delicious aroma of a duck being roasted.
-campfire	You draw your sword and walk warily forward.
-campfire	Suddenly a sinewy man with long hair and a beard jumps out from behind a rock, screaming at the top of his voice.
-campfire	He is wearing animal furs and carrying a stone club which he raises to attack you.
+	You draw your sword and walk warily forward.
+	Suddenly a sinewy man with long hair and a beard jumps out from behind a rock, screaming at the top of his voice.
+	He is wearing animal furs and carrying a stone club which he raises to attack you.
 horses	Lying between the stunted bushes, you listen to the noise of the thundering hooves growing louder.
 horses	Bending back a branch, you see four CENTAURS gallop by, each armed with a bow and a quiver of arrows.
 horses	You lie quite still until the sound of their hooves fades.
-mountain,stream	Your journey south is long and arduous, but yout determination to leave Icefinger Mountains behind you spurs you on.
-mountain,stream	Two days after leaving the ice caverns, you reach the River Kok.
-mountain,stream	Fifty miles upriver lies Fang, the town where Baron Sukumvit's notorious Deathtrap Dungeon awaits its challengers each year for the Trial of Champions.
-mountain,stream	However, at this time of year Fang is unlikely to be more interesting than any other river town.
-mountain,stream	You decide against going there and walk downriver to find a bridge or a boatman.
+mountain	Your journey south is long and arduous, but your determination to leave Icefinger Mountains behind you spurs you on.
+stream	Two days after leaving the ice caverns, you reach the River Kok.
+stream	Fifty miles upriver lies Fang, the town where Baron Sukumvit's notorious Deathtrap Dungeon awaits its challengers each year for the Trial of Champions.
+	However, at this time of year Fang is unlikely to be more interesting than any other river town.
+stream	You decide against going there and walk downriver to find a bridge or a boatman.
 forest	Through the trees to your left, you see a tall man with pointed ears and fair hair.
-forest	He is wearing a green cloak and he is busy carving arrow shafts with his knife
+	He is wearing a green cloak and he is busy carving arrow shafts with his knife
 campfire	The fire is soon roaring and crackling in the hearth.
 campfire	The heat of the flames radiates through your body and you revel in the warmth.
-campfire	The stew is delicious and you feel your strength returning.
-campfire	Add 3 stamina points.
-campfire	With renewed energy, you decide to leave the hut to continue your quest
+	The stew is delicious and you feel your strength returning.
+	Add 3 stamina points.
+	With renewed energy, you decide to leave the hut to continue your quest
 stream	To your left, you see a narrow footpath leading from the bank of the river into the trees
 stream	Further along the bank you find a small wooden boat tied to a tree.
 stream	You look around but you cannot see its owner.
@@ -328,59 +326,55 @@ forest	You are being watched.
 forest	As you are now in a wood, you proceed cautiously.
 forest	Suddenly the bushes part and a figure steps forward.
 forest	Dressed in black, this tall man bars your way.
-mountains	You follow the path for the rest of the afternoon until you stand on a hilltop.
-mountains	The path runs down the hill into a small village set on a river and you follow it down.
+hills	You follow the path for the rest of the afternoon until you stand on a hilltop.
+hills	The path runs down the hill into a small village set on a river and you follow it down.
 night	The noise outside eventually subsides as darkness spreads over the village.
 night	You have a good night's sleep.
 stream	No one in the history of the Shamutanti Hills has found a way of escaping the Demon's Deluge and you are not likely to be the first.
 stream	You are still trying desperately to think of a way out as the air leaves the cave and your lungs fill with water .
-stream	.
-stream	.
 meadow	The smell gets sweeter as you pass on through the fields of Black Lotus flowers.
-meadow	You feel light-headed as you continue and you start to skip and jump with merriment.
-meadow	Jann, still on your shoulder, is likewise full of glee.
-meadow	Your head swims.
-meadow	Before you can stop yourself, you are feeling dizzy and falling to the ground.
-meadow	You fall into the flowers on to something hard.
-meadow	A surge of horror passes through you as you realize it is a skeleton!
-meadow	But the horror is short-lived as you lose consciousness.
-meadow	The sweet aroma of the Black Lotus is a deadly poison and you have breathed your last.
+	You feel light-headed as you continue and you start to skip and jump with merriment.
+	Jann, still on your shoulder, is likewise full of glee.
+	Your head swims.
+	Before you can stop yourself, you are feeling dizzy and falling to the ground.
+	You fall into the flowers on to something hard.
+	A surge of horror passes through you as you realize it is a skeleton!
+	But the horror is short-lived as you lose consciousness.
+	The sweet aroma of the Black Lotus is a deadly poison and you have breathed your last.
 meadow	You will rest for ever in the fields of the black death .
-meadow	.
-meadow	.
-night,stream	You find a suitable shelter in the rocks on the bank of the stream and bed down for the night.
-night,stream	If you have not eaten since you left the Outpost Settlement, you may take some Provisions if you have any and add 2 stamina points.
-night,stream	If you have already eaten, you will gain only 1 stamina point from the food.
+stream	You find a suitable shelter in the rocks on the bank of the stream and bed down for the night.
+	If you have not eaten since you left the Outpost Settlement, you may take some Provisions if you have any and add 2 stamina points.
+	If you have already eaten, you will gain only 1 stamina point from the food.
 night,stream	Eventually you drift off to sleep, soothed by the babbling of the stream.
-campfire	You enter the village cautiously, creeping round the huts, but the place appears to be deserted.
+	You enter the village cautiously, creeping round the huts, but the place appears to be deserted.
 campfire	A fire burns in the centre of the camp in a pit and a pile of logs stands near by.
 tavern	The inn is not cheap.
-tavern	A bed for the night is 5 Gold Pieces and a meal is 4.
-tavern	If you eat, pay the price and add 2 stamina points
-meadow	Surprisingly enough, although you can still feel the force on your arm, it does not hamper your progress and you can make your way onwards.
-meadow	In fact, the going seems to be easier, as if you are being led by some invisible guide who is coaxing you along the best route.
+	A bed for the night is 5 Gold Pieces and a meal is 4.
+	If you eat, pay the price and add 2 stamina points
+	Surprisingly enough, although you can still feel the force on your arm, it does not hamper your progress and you can make your way onwards.
+	In fact, the going seems to be easier, as if you are being led by some invisible guide who is coaxing you along the best route.
 meadow	Eventually, the going gets easier as the dense undergrowth thins and you are soon walking through a prairie with grass up to your waist.
 meadow	As you leave the heavy foliage, the grip on your arm is released.
 stream	You emerge from the woods on to a river-bank.
 stream	The path leads over a rough wooden bridge and along the bank.
 meadow	The going is easy through the grass.
-meadow	You happen across a parting where it seems someone has been before, making a trail which is heading in the general direction you wish to continue.
+	You happen across a parting where it seems someone has been before, making a trail which is heading in the general direction you wish to continue.
 town	Further along the way you come across a couple of merchants' huts and you browse through the items for sale.
-town	If you wish, and if you can afford it, you may buy any of the following items:
+	If you wish, and if you can afford it, you may buy any of the following items:
 forest	You find a suitable spot in the woods to make your camp.
 night	You settle down and sleep, but there is a chance that you may be discovered by night creatures who will disturb your rest.
 crowd	There seems to be a good deal of merriment in the village.
-crowd	'It is the festival of the young,' whispers Jann.
-crowd	'Once a year the children are allowed the freedom of the village.
-crowd	It is a time of great fun and pranks.'
+	'It is the festival of the young,' whispers Jann.
+	'Once a year the children are allowed the freedom of the village.
+	It is a time of great fun and pranks.'
 crowd	A number of children sit in the street ahead, drinking ale.
-crowd	A little too much, it seems, as they are laughing loudly.
+	A little too much, it seems, as they are laughing loudly.
 crowd	Ahead a young boy holds an old woman over his knee and is spanking her.
 crowd	A group of boys is fighting outside a hut with a sign which reads: 'Glandragor's Tavern', A group of girls is standing at a signpost pointing to the 'Crystal Waterfall', tripping up their elders as they pass and giggling to each other.
 crowd	The little men carry you off and you soon arrive at the Head Hunter camp.
-crowd	There is much commotion as you are led into the centre of the settlement.
-crowd	Several natives rush off to fill a large pot with water to be heated over a fire - the implications of which you do not relish!
-crowd	Meanwhile, you are put into a bamboo cage, guarded by a strong warrior.
+crowd,town	There is much commotion as you are led into the centre of the settlement.
+campfire	Several natives rush off to fill a large pot with water to be heated over a fire - the implications of which you do not relish!
+	Meanwhile, you are put into a bamboo cage, guarded by a strong warrior.
 	'You cannot escape the Spirit of Mananka!'
 	cries the face.
 	'And your mission is cursed!'
@@ -390,20 +384,20 @@ crowd	Meanwhile, you are put into a bamboo cage, guarded by a strong warrior.
 	Each time you lose stamina points for any reason except casting spells, you must lose 1 extra stamina point.
 	You may search for some means of ridding yourself of the Spirit's curse for, until you do, you are more vulnerable to dangers.
 	You may now leave the hut and continue your journey onwards.
-forest	You leave Kristatanti along a path which snakes out into the hills.
+hills	You leave Kristatanti along a path which snakes out into the hills.
 forest	All morning you follow it as it twists through the woods of gnarled trees until eventually you reach a clearing where another path joins from the east.
-forest	A signpost at the junction indicates straight on to Dhumpus and westwards to Alianna.
+	A signpost at the junction indicates straight on to Dhumpus and westwards to Alianna.
 horse	The driver is a cheerful fellow and prefers company to travelling alone.
-horse	You may add 1 luck point for getting this lift.
-horse	You travel for most of the morning at a pace not much faster than you could walk until he finally reaches a field where he is collecting vegetables.
-mountain	You continue along the path, leaving the village behind.
-mountain	About half an hour later, you reach the start of the climb into the hills and continue upwards.
-mountain	Five minutes later, you reach a fork offering you two ways onwards.
-meadow	You travel along the path for some time.
+	You may add 1 luck point for getting this lift.
+horse,meadow	You travel for most of the morning at a pace not much faster than you could walk until he finally reaches a field where he is collecting vegetables.
+	You continue along the path, leaving the village behind.
+hills	About half an hour later, you reach the start of the climb into the hills and continue upwards.
+	Five minutes later, you reach a fork offering you two ways onwards.
+	You travel along the path for some time.
 meadow	Passing out of a shrubby woodland a pleasant smell hits your nostrils.
 meadow	Off to the right is a field of beautiful black flowers.
 meadow	The path through the field leads on over the brow of the hill into a valley below.
-meadow	Jann believes this is the quickest path to Torrepani, the next village on your route.
+	Jann believes this is the quickest path to Torrepani, the next village on your route.
 meadow	You continue through the bush until you reach a point where the undergrowth thins and becomes a waist-high grassland.
 	The passage continues until you reach a large stone-cut door blocking your progress.
 	The strange carvings are in a familiar language, but the quality of the shaft and head indicate that the axe is well used and may not last many more battles.
@@ -417,29 +411,29 @@ meadow	You continue through the bush until you reach a point where the undergrow
 	Then she comes back and questions you about your journey.
 	She is particularly interested in knowing whether you came across an old man.
 	The gentle upward slope becomes a steep climb and you must rest several times during the morning.
-	Finally you reach the top and can look over the hill to see that the path leads into a small settlement of crudely made huts.
+hills	Finally you reach the top and can look over the hill to see that the path leads into a small settlement of crudely made huts.
 	You follow the path down and into the village.
 	As you arrive, the villagers notice you and make for their huts, almost as if in fear.
 	They are a sorry-looking bunch, short and squat with tough, leathery skin.
 	Several of them are missing limbs and some are only able to drag themselves along with their hands.
 mountain	You continue on your way and approach a rope bridge strung precariously between two boulders.
 forest	You press on through the wood and soon come across another path which crosses it.
-forest	You follow this path northwards until you come to a junction.
-forest	A signpost at the junction points westwards to Alianna and straight on to Dhumpus.
-forest	The path winds upwards into the hills and you enter a wood.
+	You follow this path northwards until you come to a junction.
+	A signpost at the junction points westwards to Alianna and straight on to Dhumpus.
+hills,forest	The path winds upwards into the hills and you enter a wood.
 forest	The afternoon sun glints through the trees, playing tricks on your eyes.
 forest	Every so often you catch a glimpse of some strange-shaped animal or other watching you, only to find that it is the silhouetted branches and leaves caught at an odd angle.
-campfire	Inside, the hut has no furniture.
+	Inside, the hut has no furniture.
 campfire	A small fire burns in the middle of the floor and against the far wall stands a family of three, cowering away from you.
-stream	Further along the path, you come across another object, this time a locket containing a small portrait of a woman, obviously pilfered from a previous traveller unaware of the grass's habits.
-stream	You may take this with you.
+	Further along the path, you come across another object, this time a locket containing a small portrait of a woman, obviously pilfered from a previous traveller unaware of the grass's habits.
+	You may take this with you.
 stream	Eventually you reach the river-bank again, well past the village.
 tavern	The meal is just being served.
 tavern	If you wish to sit down to eat, pay the 2 Gold Pieces and have your bowl of Skunkbear stew.
-tavern	You may add 3 stamina points if you eat.
+	You may add 3 stamina points if you eat.
 tavern	You will not be able to eat your own Provisions at the inn.
-tavern	If you wish to rest for the night, pay the 3 Gold Pieces.
-tavern	The bed you are given is not particularly clean, but is comfortable and you may add 5 stamina points for a good night's rest.
+	If you wish to rest for the night, pay the 3 Gold Pieces.
+night	The bed you are given is not particularly clean, but is comfortable and you may add 5 stamina points for a good night's rest.
 stream	The path winds alongside a bubbling stream and you follow it onwards along the west bank.
 stream	The valley you are in becomes narrower, but you soon come across a flat, grassy bank where you may stop and eat Provisions
 	You turn to your pack and pick it up.
@@ -457,34 +451,33 @@ stream	The valley you are in becomes narrower, but you soon come across a flat, 
 	You describe the old man you encountered and her eyes light up.
 	She asks whether you stole from him a page from a Spell Book and is overjoyed as you pull the page from your pack.
 	Giggling with glee, she snatches it from you.
-campfire,stream	You continue along a riverside path for several hours until you reach a wide bend.
-campfire,stream	In the elbow of the bend ahead you can see a cluster of huts made out of thatched branches and twigs.
-campfire,stream	A fire in the centre of the huts wafts smoke into the air, but not a sound comes from the Village.
-night	The climb continues for two or three hours as the path twists this way and that up the hillside.
+stream	You continue along a riverside path for several hours until you reach a wide bend.
+	In the elbow of the bend ahead you can see a cluster of huts made out of thatched branches and twigs.
+campfire	A fire in the centre of the huts wafts smoke into the air, but not a sound comes from the Village.
+hills	The climb continues for two or three hours as the path twists this way and that up the hillside.
 night	Soon the air gets cold and the sun sets, making it difficult for you to see.
 night	However, the moon is full and will be able to light the way as it gets darker.
-	Some way down the hill you stop for a rest.
+hills	Some way down the hill you stop for a rest.
 	You sit on a boulder to survey what lies ahead.
 	The path leads downwards into a vale.
 	Cradled between three hills is a village - and quite a large one at that.
 	The sun is falling rapidly and you decide to head downwards towards this settlement.
 	An overhanging branch touches your face and you hear a lively chirping.
 	Hovering by your shoulder is a small creature the size of your thumb.
-	he gate is open, but you are wary of continuing.
+	The gate is open, but you are wary of continuing.
 	This is no normal gate: it stands two or three times the size of any you have seen before.
 	But the only way on is through it, so you continue - though carefully.
-mountain	You continue up the hill.
-mountain	The climb is steep, but by mid -afternoon you have reached the top.
-mountain	Continuing over the hill, you travel down a gentle slope for the rest of the afternoon.
-mountain	As the second day of your journey breaks, you march through the cool morning air of the hills, having now climbed several hundred feet You.
-mountain	reach the brow of a hill and stop in your tracks.
-mountain	To your left is a clearing in which several poles are firmly planted in the ground.
-mountain	Atop the poles are heads - some recently fixed, some semi-decayed - human heads, Goblin heads, and one or two heads of creatures you do not recognize, all with sewn-up eyes and mouths.
-mountain	A large X painted on a broad tree is obviously intended as a warning to venture no further.
-mountain	Ahead the path forks to the right and left, but you cannot be sure which path you are warned not to take!
+hills	You continue up the hill.
+hills	The climb is steep, but by mid-afternoon you have reached the top.
+hills	Continuing over the hill, you travel down a gentle slope for the rest of the afternoon.
+hills	As the second day of your journey breaks, you march through the cool morning air of the hills, having now climbed several hundred feet you reach the brow of a hill and stop in your tracks.
+	To your left is a clearing in which several poles are firmly planted in the ground.
+	Atop the poles are heads - some recently fixed, some semi-decayed - human heads, Goblin heads, and one or two heads of creatures you do not recognize, all with sewn-up eyes and mouths.
+	A large X painted on a broad tree is obviously intended as a warning to venture no further.
+	Ahead the path forks to the right and left, but you cannot be sure which path you are warned not to take!
 forest	You race off into the woods in case the commotion attracts any other creatures.
-forest	For half an hour you run before you stop to rest, when you realize that you are now hopelessly lost.
-forest	Which direction will you Take?
+	For half an hour you run before you stop to rest, when you realize that you are now hopelessly lost.
+	Which direction will you Take?
 tavern	The inn offers hot meals for sale and if you wish to stop and eat the charge will be 1 Gold Piece.
 tavern	Bread and goat's cheese are also available if you wish to buy food to take with you, and the price of two meals worth is 2 Gold Pieces.
 	You are forced upwards against the ceiling as the water level rises But Libra has not deserted you and an air pocket forms around your head As you thrash about in the water, you are able to breathe easily and soon you relax, knowing you are safe.
@@ -502,8 +495,8 @@ tavern	The owner of the house tells you that you are in the village of Kristatan
 	A cracking to your left makes you wheel round, just in time to see a tree swaying as its trunk splits and it falls towards you.
 crowd	You approach a group of Svinns deep in conversation and take a seat with them.
 crowd	They are discussing a friend, apparently killed in the night by an assassin's blade.
-crowd	Gradually you work your way into the conversation and you soon learn the reason for the depression which hangs over the village.
-crowd	The village chief's daughter has been captured by a band of marauders and offered as a sacrifice to a powerful cave demon.
+	Gradually you work your way into the conversation and you soon learn the reason for the depression which hangs over the village.c
+	The village chief's daughter has been captured by a band of marauders and offered as a sacrifice to a powerful cave demon.
 crowd	According to an ancient prophecy, a dreadful scourge will overrun the village if the chief's line ever ends - and his daughter is the chiefs only heir.
 night	You settle down to make camp for the night.
 night	You may take Provisions here and, if you do so, you may add 2 stamina points if you have not yet eaten since leaving Analand, or 1 stamina point if you have already eaten on your journey.
