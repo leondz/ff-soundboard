@@ -1,53 +1,24 @@
-%
-% File ranlp2015.tex
+\documentclass[10pt,a4paper]{article}
 
-%Contact iva@lml.bas.bg
+\usepackage{balance}
+\usepackage{lrec2006}
 
-%Based on style for ACL 2010 by
-% jshin@csie.ncnu.edu.tw or pkoehn@inf.ed.ac.uk
-%%
-%% Based on the style files for ACL-IJCNLP-2009, which were, in turn,
-%% based on the style files for EACL-2009 and IJCNLP-2008...
+\title{Environmental Audio Immersion from Fictional Narratives}
+\name{Leon Derczynski, Nanna Inie}
+\address{University of Sheffield \\ S1 4DP, UK \\ {\tt leon@dcs.shef.ac.uk} \\ \\
+		 Aarhus University \\ Aabogade 34, 8200, Denmark \\ {\tt inie@cavi.au.dk}}
 
-%% Based on the style files for EACL 2006 by 
-%%e.agirre@ehu.es or Sergi.Balari@uab.es
-%% and that of ACL 08 by Joakim Nivre and Noah Smith
-
-\documentclass[11pt]{article}
-\usepackage{ranlp2015}
-\usepackage{times}
-\usepackage{url}
-\usepackage{latexsym}
-
-\usepackage{mdwlist}
-%\setlength\titlebox{6.5cm}    % You can expand the title box if you
-% really have to
-
-\title{Determining Environmental Context from Fictional Narratives}
-
-\iffalse
-\author{Leon\\
-  University of Sheffield\\
-  {\tt email1@domain1.com}  \And
-  Nanna\\
-  Aarhus University\\
-  {\tt  email2@domain2.com}}
-\fi
-
-\date{}
-
-\begin{document}
-\maketitle
-\begin{abstract}
-Experiencing a narrative can be made more enjoyable and powerful by increasing the level of the immersion in the story.
+\abstract{Experiencing a narrative can be made more enjoyable and powerful by increasing the level of the immersion in the story.
 This can be achieved through contextual cues, such as sounds and images.
 In order to provide these cues automatically, we attempt to detect parts of the environment described in a fictional narrative.
 We present machine learning approaches to this problem, compare them against to a rule-engineered baseline, and evaluate them over a dataset of fictional texts.
-\\In addition, we analyse the performance of this system over the output of a text-to-speech system taking the same narratives as input.
-\\This audio dataset is made available.
-The system is able to recognise environmental context and respond appropriately.
-\end{abstract}
+In addition, we analyse the performance of this system over the output of a text-to-speech system taking the same narratives as input.
+This audio dataset is made available.
+The system is able to recognise environmental context and respond appropriately.}
 
+\begin{document}
+
+\maketitleabstract
 
 \section{Introduction}
 
@@ -79,7 +50,7 @@ What's important when creating environmental cues for improved narrative immersi
 \section{Method}
 
 In general, we cast the problem as one of document classification.
-Some special characteristics are included, namely that documents can have more than one class; documents may have no class at all;\footnote{Like a Marxist utopia} 
+Some special characteristics are included, namely that documents can have more than one class; and that documents may have not belong to any class at all, i.e., not every text requires or activates an environmental cue.
 
 \subsection{Dataset}
 Our ideal requirements are that a dataset be structures as instances, each being a focused passage of text, with most containing descriptions of environments or events.
@@ -87,51 +58,26 @@ For this dataset, we used paragraphs from a set of fantasy role-playing books.%~
 %HIDDEN FOR REVIEW
 Each paragraph is set in a distinct location, each possibly combined with the description of an event, making manual environment annotation simple and distinct.
 In comparison, the bounds of passages of text relevant to a particular cue are harder to detemine in running narrative text from e.g. a fictional novel .
-The set of potential environmental items in this genre is:
+The set of potential environmental items is:
 
-%\begin{itemize*}
-%\item Mountain
-%\item Hill
-%\item Forest
-%\item Swamp
-%\item Windy
-%\item Blizzard
-%\item Rain
-%\item Lightning
-%\item Stream
-%\item River
-%\item Campfire
-%\item Night
-%\item Meadow
-%\item Road
-%\item Town
-%\item Crowd
-%\item Tavern
-%\item Underground
-%\item Trotting horse
-%\item Galloping horse
-%\end{itemize*}
-
-\begin{quote}
-{\bf Environments:} Mountain; Hill; Forest; Swamp; Meadow; Road; Town; Crowd; Tavern; Underground.
-
-{\bf Ambience:} Windy; Blizzard; Rain; Lightning; Stream; River; Campfire; Night.
-
-{\bf Events:} Trotting horse; Galloping horse; Thunder
-\end{quote}
+\begin{itemize}
+\item {\bf Environments:} Mountain; Hill; Forest; Swamp; Meadow; Road; Town; Crowd; Tavern; Underground.
+\item {\bf Ambience:} Windy; Blizzard; Rain; Lightning; Stream; River; Campfire; Night.
+\item {\bf Events:} Trotting horse; Galloping horse; Many galloping horses; Thunder.
+\end{itemize}
 
 Paragraphs were labelled with one or more of these labels by a human annotator.
 In total, 203 paragraphs were labelled, with 13884 words.
 
-\iffalse
 \subsection{Spoken dataset}
 An eventual use of this system is to provide automatic sound effects in real-time for a story that is read out loud by a human narrator.
-As a result, it should operate well on the output of a speech recognition system.
+Accordingly, we attempt to train and evaluate the system based on the output of a speech recognition system.
+This requires an audio dataset and the automatic transcription of audio content, and the subsequent analysis of the text output.
+
 Paragraphs were read by an English native speaker, and recorded.
 A speech recognition system~\cite{lamere2003design} then interpreted these readings and generated a textual version of each paragraph.
 The labels used in the text input corpus were then associated with these outputs.
 This constitutes the transcribed dataset.
-\fi
 
 \subsection{Baseline}
 As a baseline, we use a gazetteer trigger words that match the name of the cue.
@@ -140,22 +86,41 @@ For example, if there is a cue named ``swamp", the passage ``He marches through 
 
 \subsection{Features and Classification}
 
-We take a variety of approaches.
-Firstly, we try a bag-of-words representation using a multinomial Bayes classifier.
-In addition, we represent paragraphs as average vectors in n-dimensional space by taking the cosine product of embeddings of words in the paragraph, and then learn a binary SVM for each cue based on these representations.
-We used a variety of representations, including Collobert and Weston~\cite{collobert2008unified} embeddings, word2vec values, and bags of Brown clusters.
+It is better to provide environmental responses as soon as possible after input.
+Therefore, we break paragraphs into sentences and label at sentence level, allowing a response to be given after processing a sentence instead of waiting for the paragraph to end.
+To build sentence-level representations, we use the sentence2vec tool to map candidate sentences into a $k-$dimensional continuous embedded space.
+This relies on the word2vec tool, which takes large tracts of unlabeled text as input and builds vector representations of words based on their distributional properties.
 
 The genre used to generate these had a significant effect on result quality.
 For example, using embeddings generated from two billion Google News articles, the top-ranking non-punctuation match for the sentence \emph{``The going underfoot becomes muddier, until eventually you reach an area where bulrushes tower over your head."} was the phrase {\em Maria\_Sharapova} -- not an intuitively relevant result.
 News is intrinsically constrained in topic and style, and out-of-domain for fictional narratives.
-Therefore, we used embeddings learned from the multi-topic Brown corpus~\cite{francis1979brown}, which includes large amounts of narrative and fictional text.
 
-LD feature selection~\cite{lui2011cross} + nbayes; use of LD motivated by diversity in subsets of environments encountered per story (e.g. some stories set mostly in woodland, others in a town)
+Therefore, we used embeddings learned from the multi-topic Brown corpus~\cite{francis1979brown}, which includes large amounts of narrative and fictional text.
+The sections used were F (Popular Lore), K (Fiction: General), and N (Fiction: Adventure and Western).
+In addition, we used a digital copy of {\em The Lord of the Rings}.
+This yield a sample of roughly 820K words over which distributional embeddings were induced.
+
+We frame this as a multi-label, multi-class learning problem.
+That is, there are many potential classes in terms of sounds to be played, and also, more than one of these may apply to a given input.
+We take a one-vs-all approach to classification, training a binary classifier for each label, and apply all classifiers to a sentence as it comes in.
 
 We note that false positives have a higher penalty than false negatives.
 It is disruptive to receive the wrong cue.
 For example, hearing battle noises when one should hear a babbling brook (false positive) is detrimental, and worse than hearing nothing (false negative).
-In order to bias classifications in this direction, we experiment with the SVM Cost parameter~\cite{morik1999combining} and also evaluate with both F1 and F2.
+In order to bias classifications in this direction, we experiment with the SVM Cost parameter~\cite{morik1999combining}.
+
+Further, we represent this immersion disruption in the evalation measure.
+Given precision $P$ and recall $R$, typically an F-score is drawn from $F_\beta$ with $\beta=1$.
+
+\begin{equation}
+x
+\end{equation}
+
+
+Firstly, we try a bag-of-words representation using a multinomial Bayes classifier.
+In addition, we represent paragraphs as average vectors in n-dimensional space by taking the cosine product of embeddings of words in the paragraph, and then learn a binary SVM for each cue based on these representations.
+
+
 
 
 
@@ -241,13 +206,12 @@ SVM doc classification~\cite{isa2008text}.
 \section{Conclusion}
 
 
-\iffalse
-\section*{Acknowledgments}
-This project has received funding from the European Union’s Seventh Framework Programme for research, technological development and demonstration under grant agreement No. 611233, \textsc{Pheme}.
-ah, was anything funding this? could anything be associated with this?? ahhh, erm
-\fi
+\paragraph*{Acknowledgments}
+This research has received partial support from the European Union’s Seventh Framework Programme for research, technological development and demonstration under grant agreement No. 611233, \textsc{Pheme}, and also from The Danish Council for Strategic Research under grant agreement No. 1311-00001B, \textsc{CIBIS}.
 
-\bibliographystyle{acl}
+\balance
+
+\bibliographystyle{lrec2006}
 \bibliography{rpg-scene}
 
 \end{document}
