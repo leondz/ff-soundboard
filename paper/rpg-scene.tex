@@ -52,10 +52,17 @@ What's important when creating environmental cues for improved narrative immersi
 In general, we cast the problem as one of document classification.
 Some special characteristics are included, namely that documents can have more than one class; and that documents may have not belong to any class at all, i.e., not every text requires or activates an environmental cue.
 
+\begin{figure}
+\centering
+\label{fig:ff-para}
+\caption{Example narrative text}
+\end{figure}
+
 \subsection{Dataset}
 Our ideal requirements are that a dataset be structures as instances, each being a focused passage of text, with most containing descriptions of environments or events.
-For this dataset, we used paragraphs from a set of fantasy role-playing books.%~\cite{fangs,crypt,poe,sswamp}.
+For this dataset, we used paragraphs from a set of role-playing books.%~\cite{fangs,crypt,poe,sswamp}.
 %HIDDEN FOR REVIEW
+An example text is given in Figure~\ref{fig:ff-para}
 Each paragraph is set in a distinct location, each possibly combined with the description of an event, making manual environment annotation simple and distinct.
 In comparison, the bounds of passages of text relevant to a particular cue are harder to detemine in running narrative text from e.g. a fictional novel .
 The set of potential environmental items is:
@@ -92,7 +99,7 @@ To build sentence-level representations, we use the sentence2vec tool to map can
 This relies on the word2vec tool, which takes large tracts of unlabeled text as input and builds vector representations of words based on their distributional properties.
 
 The genre used to generate these had a significant effect on result quality.
-For example, using embeddings generated from two billion Google News articles, the top-ranking non-punctuation match for the sentence \emph{``The going underfoot becomes muddier, until eventually you reach an area where bulrushes tower over your head."} was the phrase {\em Maria\_Sharapova} -- not an intuitively relevant result.
+For example, using word2vec embeddings generated from two billion Google News articles, the top-ranking non-punctuation match for the sentence \emph{``The going underfoot becomes muddier, until eventually you reach an area where bulrushes tower over your head."} was the phrase {\em Maria\_Sharapova} -- not an intuitively relevant result.
 News is intrinsically constrained in topic and style, and out-of-domain for fictional narratives.
 
 Therefore, we used embeddings learned from the multi-topic Brown corpus~\cite{francis1979brown}, which includes large amounts of narrative and fictional text.
@@ -113,7 +120,7 @@ Further, we represent this immersion disruption in the evalation measure.
 Given precision $P$ and recall $R$, typically an F-score is drawn from $F_\beta$ with $\beta=1$.
 
 \begin{equation}
-x
+F_\beta = (1+\beta^2)\frac{PR}{(\beta^2 P) + R} 
 \end{equation}
 
 
@@ -133,31 +140,11 @@ In addition, we represent paragraphs as average vectors in n-dimensional space b
 \hline
 Baseline: trigger words &&&& \\
 BoW + Multinomial Bayes &&&& \\
-BoW + SVM &&&& \\
-C\&W + SVM &&&& \\
-w2v + SVM &&&& \\
-Bag of Brown classes + SVM &&&& \\
+s2v + SVM &&&& \\
 \hline
 \end{tabular}
+\label{tab:results-main}
 \caption{Classification accuracy}
-\label{ref:results-main}
-\end{table*}
-
-\begin{table*}
-\centering
-\footnotesize
-\begin{tabular}{c|cccc}
-\hline
-{\bf Approach} & {\bf Precision} & {\bf Recall} & {\bf $F_1$ score} & {\bf $F_2$ score} \\
-\hline
-NoLD: best from last table[] &&&& \\
-BoW + Multinomial Bayes &&&& \\
-BoW + SVM &&&& \\
-Bag of Brown classes + SVM &&&& \\
-\hline
-\end{tabular}
-\caption{Results of adding LD feature selection}
-\label{ref:ld-selection}
 \end{table*}
 
 \begin{table*}
@@ -179,8 +166,8 @@ Bag of Brown classes + SVM &&&& \\
 5.0 &&&& \\
 \hline
 \end{tabular}
-\caption{Modulating the cost function to reduce false positives; SVM with w2v representation}
-\label{ref:results-cost}
+\label{tab:results-cost}
+\caption{Modulating the cost function to reduce false positives; SVM with s2v representation}
 \end{table*}
 
 
@@ -189,6 +176,12 @@ Bag of Brown classes + SVM &&&& \\
 Our evaluation is using precision and recall.
 This is not a plain multi-way classification task; spurious cues and missed cues are both possible, as are multiple cues per text passage.
 
+How to present these?
+
+Results are given in Table~\ref{tab:results-main}.
+
+The effect of tuning the cost parameter is shown in Table~\ref{tab:results-cost}.
+
 error analysis
 
 per-class accuracy (coarse, fine)
@@ -196,11 +189,11 @@ per-class accuracy (coarse, fine)
 
 \section{Related Work}
 
-ML doc classification~\cite{sebastiani2002machine}.
-
-NN good at binary doc classification~\cite{derczynski2006machine}.
-
-SVM doc classification~\cite{isa2008text}.
+There is extensive literature on data-intensive approaches to document classification~\cite{sebastiani2002machine}.
+Given that the representation chosen is dervied from neural net approaches, it may improve things to use a neural net for the classification itself.
+We already know that neural nets are good at binary doc classification~\cite{derczynski2006machine}.
+Prior work has also examined document classification using SVM~\cite{isa2008text}.
+However, little work has address the case of streaming classification of small documents, being primarily focused on batch indexing and retrieval tasks.
 
 
 \section{Conclusion}
