@@ -1,6 +1,7 @@
 \documentclass[10pt,a4paper]{article}
 
 \usepackage{balance}
+%\usepackage{palatino}
 \usepackage{lrec2006}
 
 \title{Environmental Audio Immersion from Fictional Narratives}
@@ -54,6 +55,13 @@ Some special characteristics are included, namely that documents can have more t
 
 \begin{figure}
 \centering
+\begin{quote}
+{\fontfamily{ppl}\selectfont
+It is at least twenty metres down to the river, and the cliff is too steep for you to climb down.
+Below, you can see huge crocodiles sunning themselves in the water.
+Far to the east you can see a bridge which appears to cross the river, but no trail leads along the riverbank in that direction.
+}
+\end{quote}
 \label{fig:ff-para}
 \caption{Example narrative text}
 \end{figure}
@@ -101,6 +109,8 @@ This relies on the word2vec tool, which takes large tracts of unlabeled text as 
 The genre used to generate these had a significant effect on result quality.
 For example, using word2vec embeddings generated from two billion Google News articles, the top-ranking non-punctuation match for the sentence \emph{``The going underfoot becomes muddier, until eventually you reach an area where bulrushes tower over your head."} was the phrase {\em Maria\_Sharapova} -- not an intuitively relevant result.
 News is intrinsically constrained in topic and style, and out-of-domain for fictional narratives.
+Further, with creative writing, we expect more out-of-vocabulary words originating from authors'/speakers' extended use of language when conjuring imagery.
+To this end, we anticipate that representations which rely on lexical items directly may suffer from degraded performance.
 
 Therefore, we used embeddings learned from the multi-topic Brown corpus~\cite{francis1979brown}, which includes large amounts of narrative and fictional text.
 The sections used were F (Popular Lore), K (Fiction: General), and N (Fiction: Adventure and Western).
@@ -111,23 +121,30 @@ We frame this as a multi-label, multi-class learning problem.
 That is, there are many potential classes in terms of sounds to be played, and also, more than one of these may apply to a given input.
 We take a one-vs-all approach to classification, training a binary classifier for each label, and apply all classifiers to a sentence as it comes in.
 
+The Stanford PTB tokeniser is used for splitting texts.
+
+\section{Evaluation}
+
 We note that false positives have a higher penalty than false negatives.
 It is disruptive to receive the wrong cue.
 For example, hearing battle noises when one should hear a babbling brook (false positive) is detrimental, and worse than hearing nothing (false negative).
 In order to bias classifications in this direction, we experiment with the SVM Cost parameter~\cite{morik1999combining}.
 
-Further, we represent this immersion disruption in the evalation measure.
+Further, we represent this immersion disruption in the evaluation measure.
 Given precision $P$ and recall $R$, typically an F-score is drawn from $F_\beta$ with $\beta=1$.
 
 \begin{equation}
 F_\beta = (1+\beta^2)\frac{PR}{(\beta^2 P) + R} 
 \end{equation}
 
+When $\beta=1$, precision and recall are balanced in a harmonic mean, e.g. F1-score.
+That is, false positives and false negatives impact results equally.
+To score away from false positives, i.e. wrong cues, we set $\beta=2$.
 
 Firstly, we try a bag-of-words representation using a multinomial Bayes classifier.
 In addition, we represent paragraphs as average vectors in n-dimensional space by taking the cosine product of embeddings of words in the paragraph, and then learn a binary SVM for each cue based on these representations.
 
-
+Note that there is an assumption of orthogonality here which is not necessarily appropriate: if "oncoming horses" is the target label, a classifier that returns "trotting horses" does not really mis-perform as severely as one that returns "torrential rain".
 
 
 
